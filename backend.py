@@ -19,6 +19,7 @@ import tensorflow as tf
 from sklearn.metrics import (confusion_matrix,accuracy_score,classification_report,f1_score,precision_score,recall_score)
 from imblearn.over_sampling import SMOTE
 
+
 #Load dataset and cleaning
 dataset = pd.read_csv(r'C:\Users\VICTUS\Desktop\mastering git\Practise git\healthcare_stroke_predictor\stroke-data.csv')
 dataset  = dataset[dataset['gender'] != 'Other']
